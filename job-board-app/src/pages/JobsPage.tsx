@@ -104,7 +104,7 @@ const JobsPage: React.FC = () => {
                     <JobCard
                       job={job}
                       onBookmark={handleBookmarkToggle}
-                      isBookmarked={bookmarkedJobs.some(b => b.slug === job.slug)}
+                      isBookmarked={bookmarkedJobs?.some(b => b.slug === job.slug)}
                     />
                   </Col>
                 ))}
