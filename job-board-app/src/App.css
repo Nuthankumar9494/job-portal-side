@@ -1,0 +1,18 @@
+*{
+  padding: 0px;
+  margin: 0px;
+};
+
+.card-height{
+  height: 240px;
+}
+
+.custom-navbar {
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.navlink{
+  cursor: pointer;
+}
