@@ -20,11 +20,11 @@ const BookmarksPage: React.FC = () => {
     <Container className="mt-5 pt-5">
       <h2 className="mb-4">Bookmarked Jobs</h2>
 
-      {bookmarkedJobs.length === 0 ? (
+      {bookmarkedJobs?.length === 0 ? (
         <p>No jobs bookmarked.</p>
       ) : (
         <Row>
-          {bookmarkedJobs.map((job: Job) => (
+          {bookmarkedJobs?.map((job: Job) => (
             <Col  xsm = '12' sm='12' lg='3' md='4' key={job.slug}>
               <JobCard
                 job={job}
