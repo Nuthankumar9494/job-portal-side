@@ -66,7 +66,7 @@ const JobsPage: React.FC = () => {
   };
 
   const handleBookmarkToggle = (job: Job) => {
-    const isBookmarked = bookmarkedJobs.some(b => b.slug === job.slug);
+    const isBookmarked = bookmarkedJobs?.some(b => b.slug === job.slug);
     if (isBookmarked) {
       dispatch(removeBookmark(job.slug));
     } else {
